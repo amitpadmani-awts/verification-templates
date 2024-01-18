@@ -1,0 +1,50 @@
+[
+  {
+    "id": "Aries:5:EInvoice:0.0.1:indy",
+    "name": "EInvoice",
+    "description": "Verify that you have valid EInvoice",
+    "version": "0.0.1",
+    "payload": {
+      "type": "anoncreds",
+      "data": [
+        {
+          "schema": "ExRuyTywoH5VGtJmHvMLpu:2:EInvoice:1.0",
+          "requestedAttributes": [
+            {
+              "names": ["Party Name", "Party GST", "Invoice Date", "Items"],
+              "restrictions": [
+                {
+                  "cred_def_id": "ExRuyTywoH5VGtJmHvMLpu:3:CL:275973:EInvoice"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "Aries:5:EWay:0.0.1:indy",
+    "name": "EWay",
+    "description": "Verify that you have valid EWay bill",
+    "version": "0.0.1",
+    "payload": {
+      "type": "anoncreds",
+      "data": [
+        {
+          "schema": "ExRuyTywoH5VGtJmHvMLpu:2:EWay Bill:1.0",
+          "requestedAttributes": [
+            {
+              "names": ["Bill Date", "Place of Delivery", "Recipient GST", "Supplier GST"],
+              "restrictions": [
+                {
+                  "cred_def_id": "ExRuyTywoH5VGtJmHvMLpu:3:CL:275975:EWay"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
